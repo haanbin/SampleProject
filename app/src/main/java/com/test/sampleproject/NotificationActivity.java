@@ -39,12 +39,8 @@ public class NotificationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notification);
         TextView textView = findViewById(R.id.notification_send_text);
         TextView textView3 = findViewById(R.id.notification_send_single_text);
-        textView.setOnClickListener(v -> {
-            setNotificationGroup();
-        });
-        textView3.setOnClickListener(v -> {
-            setNotificationAnotherGroup();
-        });
+        textView.setOnClickListener(v -> setNotificationGroup());
+        textView3.setOnClickListener(v -> setNotificationAnotherGroup());
     }
 
 

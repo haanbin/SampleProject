@@ -25,12 +25,9 @@ public class TTSActivity extends AppCompatActivity {
         EditText pitchEdit = findViewById(R.id.tts_pitch_edit);
         EditText speechEdit = findViewById(R.id.tts_speech_edit);
         TextView downText = findViewById(R.id.tts_down_text);
-        mTextToSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int i) {
-                if (i == TextToSpeech.SUCCESS) {
-                    mTextToSpeech.setLanguage(Locale.KOREA);
-                }
+        mTextToSpeech = new TextToSpeech(this, i -> {
+            if (i == TextToSpeech.SUCCESS) {
+                mTextToSpeech.setLanguage(Locale.KOREA);
             }
         });
 
