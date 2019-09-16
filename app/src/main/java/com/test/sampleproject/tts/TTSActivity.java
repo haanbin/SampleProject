@@ -1,4 +1,4 @@
-package com.test.sampleproject;
+package com.test.sampleproject.tts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.speech.tts.TextToSpeech;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.test.sampleproject.R;
 
 import java.io.File;
 import java.util.Locale;

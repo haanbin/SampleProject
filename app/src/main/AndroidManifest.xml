@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NotificationActivity"></activity>
-        <activity android:name=".TTSActivity" />
+        <activity android:name=".notification.NotificationActivity"></activity>
+        <activity android:name=".tts.TTSActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name=".DeleteBroadcastReceiver"
+            android:name=".notification.DeleteBroadcastReceiver"
             android:exported="false" >
         </receiver>
     </application>

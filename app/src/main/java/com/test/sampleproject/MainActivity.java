@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.orhanobut.hawk.Hawk;
+import com.test.sampleproject.notification.NotificationActivity;
+import com.test.sampleproject.tts.TTSActivity;
 
 public class MainActivity extends AppCompatActivity {
 
