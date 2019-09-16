@@ -1,33 +1,16 @@
-package com.test.sampleproject;
+package com.test.sampleproject.notification;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.core.app.TaskStackBuilder;
-import androidx.core.content.ContextCompat;
 
-import android.app.Notification;
 import android.app.NotificationChannel;
-import android.app.NotificationChannelGroup;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemClock;
-import android.service.notification.StatusBarNotification;
-import android.util.Log;
-import android.widget.RemoteViews;
 import android.widget.TextView;
 
-import com.orhanobut.hawk.Hawk;
-
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Random;
+import com.test.sampleproject.R;
 
 public class NotificationActivity extends AppCompatActivity {
 

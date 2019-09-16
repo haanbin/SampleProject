@@ -1,4 +1,4 @@
-package com.test.sampleproject;
+package com.test.sampleproject.notification;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
