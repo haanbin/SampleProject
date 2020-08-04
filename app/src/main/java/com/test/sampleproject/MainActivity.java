@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             Bundle bundle1 = new Bundle();
             bundle1.putString(FirebaseAnalytics.Param.ITEM_ID, "1");
             bundle1.putString(FirebaseAnalytics.Param.ITEM_NAME, "1");
+            bundle1.putString(FirebaseAnalytics.Param.ITEM_NAME, "1");
+            bundle1.putString(FirebaseAnalytics.Param.ITEM_NAME, "1");
             mFirebaseAnalytics.logEvent("참가", bundle1);
             Intent intent = new Intent(this, TTSActivity.class);
             startActivity(intent);
