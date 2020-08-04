@@ -4,6 +4,8 @@
     package="com.test.sampleproject">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".dialogtest.DialogTestActivity"/>
-        <activity android:name=".notification.NotificationActivity"/>
+        <activity android:name=".html.HtmlActivity"></activity>
+        <activity android:name=".pdf.PdfActivity" />
+        <activity android:name=".dialogtest.DialogTestActivity" />
+        <activity android:name=".notification.NotificationActivity" />
         <activity android:name=".tts.TTSActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -26,8 +30,7 @@
 
         <receiver
             android:name=".notification.DeleteBroadcastReceiver"
-            android:exported="false" >
-        </receiver>
+            android:exported="false" />
     </application>
 
 </manifest>
