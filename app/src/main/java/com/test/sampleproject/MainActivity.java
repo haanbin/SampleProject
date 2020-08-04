@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
             bundle1.putString(FirebaseAnalytics.Param.ITEM_NAME, "1");
             bundle1.putString(FirebaseAnalytics.Param.ITEM_NAME, "1");
             mFirebaseAnalytics.logEvent("참가", bundle1);
-            Intent intent = new Intent(this, TTSActivity.class);
-            startActivity(intent);
         });
         TextView textView2 = findViewById(R.id.notification_text);
         textView2.setOnClickListener(v -> {
