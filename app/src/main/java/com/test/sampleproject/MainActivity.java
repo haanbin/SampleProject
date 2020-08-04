@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, TTSActivity.class);
             startActivity(intent);
         });
-        TextView textView2 = findViewById(R.id.notification_text);
-        textView2.setOnClickListener(v -> {
+        TextView textView3 = findViewById(R.id.notification_text);
+        textView3.setOnClickListener(v -> {
             Intent intent = new Intent(this, NotificationActivity.class);
             startActivity(intent);
         });
-
-
+        Intent intent = new Intent(this, TTSActivity.class);
+        startActivity(intent);
     }
 }
