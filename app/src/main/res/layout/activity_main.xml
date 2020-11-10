@@ -74,4 +74,20 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pdf_text"/>
+
+    <TextView
+        android:id="@+id/animation_text"
+        android:layout_width="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="animation TEST"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/html_text"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

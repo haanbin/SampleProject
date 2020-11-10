@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -74,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
         textView5.setOnClickListener(v -> {
             Intent intent = new Intent(this, HtmlActivity.class);
             startActivity(intent);
+        });
+        TextView textView6 = findViewById(R.id.animation_text);
+        textView6.setOnClickListener(v -> {
+            Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);
+            textView6.startAnimation(shake);
         });
     }
 }
